@@ -20,6 +20,6 @@
     * Output from `./ContractValuesDataMunging.ipynb` with `./modified/cleaned_raptor_full.csv` as input.
     * Contains data from the 1984-85 season onwards since salary cap data only exists from that point on.
     * Filters `./modified/cleaned_raptor_full.csv` to include only `RS` and `PO` based on teams and drops null salary values.
-    * Also filters based players that have only played at least 290 games total ( at least 5 mins a game for 58 of the 82 games). 70% game attendance is the NBA cutoff for seasonal awards.
+    * Also filters based players that have only played at least 290 miutes total (at least 5 mins a game for 58 of the 82 games). 70% game attendance is the NBA cutoff for seasonal awards.
     * DOES correct team abbreviations to modern-day versions since all teams listed have modern-day equivalents.
   
