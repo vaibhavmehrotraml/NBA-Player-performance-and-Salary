@@ -33,4 +33,7 @@
     * Weights RAPTOR based on the minutes played / (40x58) since starters play 40 mpg for 58 games.
     * Replaced 0 `scaled_salary` values with minimum non-zero `scaled_salary` and then take log since it follows a log-normal distribution to make it a normal distribution.
     * Substract Z-score log_scaled_salary from the Z-score of the weighted RAPTOR to get metric of performance relative to salary.
-    
+  * `./modified/cleaned_LeagueAverages.csv`:
+    * Output from `./cleanLeagueAverages.ipynb` with `./raw/LeagueAverages.csv` input.
+    * Contains data from the 1984-85 season onwards.
+    * Corrects `Season` from "2019-2020" to 2020, making it a numeric column.
