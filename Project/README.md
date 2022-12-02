@@ -23,8 +23,14 @@
     * Also filters based players that have only played at least 290 miutes total (at least 5 mins a game for 58 of the 82 games). 70% game attendance is the NBA cutoff for seasonal awards.
     * DOES correct team abbreviations to modern-day versions since all teams listed have modern-day equivalents.
   * `./modified/cleaned_no_tot_PlayerPerGame.csv`:
-    * Output from `./CombineEloSalaries.ipynb` with `../Data/PlayerPerGame.csv` as input.
+    * Output from `./CombineEloSalaries.ipynb` with `../Data/PlayerPerGameData.csv` as input.
     * Contains data from the 1984-85 season onwards.
     * Filters `../Data/PlayerPerGame.csv` to remove values for TOT (total) in the cases where players played for multiple teams.
     * DOES correct team abbreviations to modern-day versions since all teams listed have modern-day equivalents.
-  
+  * `./modified/compare_salaryZscores.csv`:
+    * Output from `./compareRating_Salary.ipynb` with `./modified/cleaned_raptor_full.csv`, `./modified/cleaned_no_tot_PlayerPerGame.csv` as input.
+    * Contains data from the 1984-85 season onwards.
+    * Weights RAPTOR based on the minutes played / (40x58) since starters play 40 mpg for 58 games.
+    * Replaced 0 `scaled_salary` values with minimum non-zero `scaled_salary` and then take log since it follows a log-normal distribution to make it a normal distribution.
+    * Substract Z-score log_scaled_salary from the Z-score of the weighted RAPTOR to get metric of performance relative to salary.
+    
