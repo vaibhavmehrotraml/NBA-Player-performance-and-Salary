@@ -5,6 +5,10 @@
     * Contains data from 1947 onwards for all teams.
     * Gathers Pre-Season, Post-Regular Season, 	Mean,	Median,	Min, and Max Elo Ratings for each team across all seasons and shows NBA champion for each season.
     * Does NOT correct team abbreviations to modern-day versions and not all teams listed have modern-day equivalents.
+  * `./modified/filtered_Elo_with_Champs.csv`: 
+    * Output from `./Elo_cleaning.ipynb` with `./modified/Elo_ratings_with_Champs.csv` as input.
+    * Contains data from 1985 onwards for all teams.
+    * DOES correct team abbreviations to modern-day versions and not all teams listed have modern-day equivalents.
   * `./modified/cleaned_normalized_salaries.csv`: 
     * Output from `./ContractValuesDataMunging.ipynb` with `./raw/player_salaries.csv` and `./raw/salary_caps.xlsx` as input.
     * Contains data from the 1984-85 season onwards since salary cap data only exists from that point on.
