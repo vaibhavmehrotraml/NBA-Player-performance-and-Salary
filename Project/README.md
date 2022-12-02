@@ -22,4 +22,9 @@
     * Filters `./modified/cleaned_raptor_full.csv` to include only `RS` and `PO` based on teams and drops null salary values.
     * Also filters based players that have only played at least 290 miutes total (at least 5 mins a game for 58 of the 82 games). 70% game attendance is the NBA cutoff for seasonal awards.
     * DOES correct team abbreviations to modern-day versions since all teams listed have modern-day equivalents.
+  * `./modified/cleaned_no_tot_PlayerPerGame.csv`:
+    * Output from `./CombineEloSalaries.ipynb` with `../Data/PlayerPerGame.csv` as input.
+    * Contains data from the 1984-85 season onwards.
+    * Filters `../Data/PlayerPerGame.csv` to remove values for TOT (total) in the cases where players played for multiple teams.
+    * DOES correct team abbreviations to modern-day versions since all teams listed have modern-day equivalents.
   
