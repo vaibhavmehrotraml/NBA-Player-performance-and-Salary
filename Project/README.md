@@ -38,6 +38,10 @@
     * Replaced 0 `scaled_salary` values with minimum non-zero `scaled_salary` and then take log since it follows a log-normal distribution to make it a normal distribution.
     * Substract Z-score log_scaled_salary from the Z-score of the weighted RAPTOR to get metric of performance relative to salary.
   * `./modified/cleaned_LeagueAverages.csv`:
-    * Output from `./cleanLeagueAverages.ipynb` with `./raw/LeagueAverages.csv` input.
-    * Contains data from the 1984-85 season onwards.
+    * Output from `./cleanLeagueAverages.ipynb` with `./raw/LeagueAverages.csv` as input.
+    * Contains average team box score data from the 1984-85 season onwards.
+    * Corrects `Season` from "2019-2020" to 2020, making it a numeric column.
+  * `./modified/cleaned_player_LeagueAverages.csv`:
+    * Output from `./cleanLeagueAverages.ipynb` with `./raw/player_LeagueAverages.csv` as input.
+    * Contains average player box score data from the 1984-85 season onwards.
     * Corrects `Season` from "2019-2020" to 2020, making it a numeric column.
